@@ -1,3 +1,80 @@
+@font-face {
+  font-family: 'Roboto Font';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto.woff2") format('woff2'),
+       url("../fonts/roboto.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Font';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/robotomedium.woff2") format('woff2'),
+       url("../fonts/robotomedium.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Font';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/robotobold.woff2") format('woff2'),
+       url("../fonts/robotobold.woff") format('woff');
+}
+
+:root {
+
+  --basic-black: #323232;
+  --basic-dark: #353535;
+  --basic-gray-dark: #5A5A5A;
+  --basic-gray: #999999;
+  --basic-gray-med: #CACAC7;
+  --basic-gray-light: #D3D3D2;
+  --basic-white-dark: #FEFEFE;
+  --basic-white: #FFFFFF;
+
+  --basic-gradient-1: #F26843;
+  --basic-gradient-2: #E74A35;
+  --basic-rusty: #E84D37;
+  --basic-red-pale: #D07058;
+  --basic-salmon: #FBDED7;
+  --basic-pink: #F8F7F4;
+
+  --basic-green-light: #ECF1EE;
+  --basic-blue: #1E90FF;;
+
+  --basic-bg-green: #849D8F;
+  --basic-bg-gray: #8996A6;
+  --basic-bg-brown: #9D8B84;
+
+  --basic-black-transparent1: rgba(255, 255, 255, 0.2);
+  --basic-black-transparent2: rgba(255, 255, 255, 0.5);
+  --basic-black-transparent3: rgba(255, 255, 255, 0.8);
+  --basic-black-transparent4: rgba(50, 50, 50, 0.2);
+  --basic-gray-transparent1: rgba(178, 178, 178, 0.52);
+  --basic-gray-shadow: rgba(49, 50, 53, 0.5);
+  --basic-black-shadow: rgba(0, 0, 0, 0.4);
+  --basic-red-shadow: rgba(160, 32, 11, 0.76);
+
+
+}
+
 body {
   background-color: #849D8F;
+}
+
+
+.site-wrapper-1 {
+  background-color: #849d8f;
+  background-image: url("img/slider-item-1.png");
+}
+
+.site-wrapper-2 {
+  background-color: #8996a6;
+  background-image: url("img/slider-item-2.png");
+}
+
+.site-wrapper-3 {
+  background-color: #9d8b84;
+  background-image: url("img/slider-item-3.png");
 }
