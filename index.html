@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="index-wrapper site-wrapper-1 icecream-bg-1">
-      <header class="main-header">
+      <header class="main-header container">
         <nav class="main-navigation">
           <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop"></a>
           <ul class="navigation-list">
@@ -30,7 +30,7 @@
             </li>
           </ul>
         </nav>
-        <div>
+        <div class="user-menu">
 
           <!-- форма поиска -->
           <a><span class="visually-hidden">Поиск</span></a>
@@ -78,13 +78,16 @@
             </div>
 
         </div>
-        <p class="open-hours">с 10 до 20, ежедневно</p>
-        <p><a class="phone-number" href="tel:88124502525">8 812 450-25-25</a></p>
+
+        <div class="header-contacts">
+          <p class="open-hours">с 10 до 20, ежедневно</p>
+          <p><a class="phone-number" href="tel:88124502525">8 812 450-25-25</a></p>
+        </div>
       </header>
 
       <main>
         <h1 class="visually-hidden">Интернет-магазин мороженного Глэйси</h1>
-        <section class="promo-slider">
+        <section class="promo-slider container">
           <h2 class="visually-hidden">Акция - 2 рожка</h2>
           <ul class="slider-list">
             <li class="slide slide-1 slide-shown">
@@ -106,7 +109,7 @@
             <button type="button" aria-label="Третий слайд"></button>
           </div>
         </section>
-        <section class="special-offers">
+        <section class="container shared-container">
           <h2 class="visually-hidden">Специальные предложения</h2>
           <div class="special-offer offer-1">
             <dt class="special-offer-title">Малинка даром!</dt>
@@ -119,65 +122,71 @@
             <a class="btn" href="#">Хочу шоколадки!</a>
           </div>
         </section>
-        <section class="populars">
+        <section class="populars container">
           <h2 class="visually-hidden">Хиты продаж</h2>
           <ul class="catalog-list">
             <li class="catalog-list-item">
               <img src="img/icecream1.png" width="267" height="267" alt="Сливочное апельсин">
               <p class="price"><span class="price-rub">310 ₽</span>/кг</p>
               <a class="link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-              <a class="btn">Быстрый просмотр</a>
+              <a class="btn" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list-item">
               <img src="img/icecream2.png" width="267" height="267" alt="Сливочное кофе-шоколад">
               <p class="price"><span class="price-rub">380 ₽</span>/кг</p>
               <a class="link" href="#">Сливочно-кофейное с кусочками шоколада</a>
-              <a class="btn">Быстрый просмотр</a>
+              <a class="btn" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list-item">
               <img src="img/icecream3.png" width="267" height="267" alt="Сливочное клубника">
               <p class="price"><span class="price-rub">355 ₽</span>/кг</p>
               <a class="link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-              <a class="btn">Быстрый просмотр</a>
+              <a class="btn" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list-item">
               <img src="img/icecream4.png" width="267" height="267" alt="Сливочное крем-брюле">
               <p class="price"><span class="price-rub">415 ₽</span>/кг</p>
               <a class="link" href="#">Сливочное крем-брюле с карамельной подливкой </a>
-              <a class="btn">Быстрый просмотр</a>
+              <a class="btn" href="#">Быстрый просмотр</a>
             </li>
           </ul>
         </section>
         <section class="features">
-          <h2 class="visually-hidden">Наши преимущества</h2>
-          <p>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
-          <ul class="features-list">
-            <li class="features-list-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-            <li class="features-list-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-            <li class="features-list-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-            <li class="features-list-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-          </ul>
+          <div class="container">
+            <h2 class="visually-hidden">Наши преимущества</h2>
+            <p>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
+            <ul class="features-list">
+              <li class="features-list-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+              <li class="features-list-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+              <li class="features-list-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+              <li class="features-list-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+            </ul>
+          </div>
         </section>
-        <section class="blog">
-          <h2 class="visually-hidden">Блог</h2>
-          <article>
-            <p>Новое в нашем блоге</p>
-            <h3><a class="link" href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
-          </article>
-        </section>
-        <section class="subscription">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form action="#" method="POST">
-            <label for="subscribe-email" class="visually-hidden">Введите почту для рассылки</label>
-            <input type="email" name="email" id="subscribe-email" placeholder="email@example.com">
-            <button class="btn" type="submit">Отправить</button>
-          </form>
-        </section>
-        <section class="contacts">
+        <div class="container shared-container">
+          <section class="blog">
+            <h2 class="visually-hidden">Блог</h2>
+            <article>
+              <p>Новое в нашем блоге</p>
+              <h3><a class="link" href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
+            </article>
+          </section>
+          <section class="subscription">
+            <h2 class="visually-hidden">Подписка на рассылку</h2>
+            <form class="subscription-form" action="#" method="POST">
+              <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <label for="subscribe-email" class="visually-hidden">Введите почту для рассылки</label>
+              <input type="email" name="email" id="subscribe-email" placeholder="email@example.com">
+              <button class="btn" type="submit">Отправить</button>
+            </form>
+          </section>
+        </div>
+        <section class="map">
           <h2 class="visually-hidden">Как нас найти</h2>
           <img src="img/map.png" width="1200" height="430" alt="Наше расположение на карте">
-          <div>
+        </section>
+        <section class="contacts container">
+          <div class="info-block">
             <p class="contact-info">
               Адрес главного офиса<br>и офлайн-магазина:
               <span class="contact-info-details">
@@ -189,25 +198,28 @@
               <span class="contact-info-details"><a class="link" href="tel:88124502525">8 812 450-25-25</a></span>
               (с 10 до 20 ежедневно)
             </p>
-            <a class="btn">Форма обратной связи</a>
+            <a class="btn" href="#">Форма обратной связи</a>
           </div>
+        </section>
         </section>
 
         <!-- модалка обратной связи -->
-        <form class="feedback-form modal">
-          <p class="feedback-text">Мы обязательно вам ответим!</p>
-          <label for="questions-name" class="visually-hidden">Введите имя и фамилию</label>
-          <input type="text" name="name" id="questions-name" placeholder="Имя Фамилия">
-          <label for="questions-email" class="visually-hidden">Введите почту</label>
-          <input type="email" name="email" id="questions-email" placeholder="email@example.com">
-          <label for="questions-text" class="visually-hidden">Введите ваш вопрос</label>
-          <textarea name="question" id="questions-text" placeholder="В свободной форме" rows="6"></textarea>
-          <button class="btn" type="submit">Отправить</button>
-        </form>
-        <button><span class="visually-hidden">Закрыть</span></button>
+        <div class="feedback modal">
+          <form class="feedback-form">
+            <p class="feedback-text">Мы обязательно вам ответим!</p>
+            <label for="questions-name" class="visually-hidden">Введите имя и фамилию</label>
+            <input type="text" name="name" id="questions-name" placeholder="Имя Фамилия">
+            <label for="questions-email" class="visually-hidden">Введите почту</label>
+            <input type="email" name="email" id="questions-email" placeholder="email@example.com">
+            <label for="questions-text" class="visually-hidden">Введите ваш вопрос</label>
+            <textarea name="question" id="questions-text" placeholder="В свободной форме" rows="6"></textarea>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+          <button><span class="visually-hidden">Закрыть</span></button>
+        </div>
 
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer container">
         <ul class="socials-list">
           <li class="socials-list-item">
             <a class="link" href="#">
