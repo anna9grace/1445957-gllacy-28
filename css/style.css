@@ -34,6 +34,7 @@
   --basic-gray-deep: #696969;
   --basic-white-dark: #FEFEFE;
   --basic-white: #FFFFFF;
+  --basic-toggles: #ABABAB;
 
   --basic-gradient-1: #F26843;
   --basic-gradient-2: #E74A35;
@@ -64,6 +65,8 @@
 
   --basic-bg-crimson:  #3E0008;
   --basic-bg-choco: #301A0E;
+
+  --basic-range: rgba(248, 247, 244, 0.5);
 }
 
 html {
@@ -94,19 +97,6 @@ img {
 *, *::after, *::before {
   box-sizing: border-box;
 }
-
-/* .index-wrapper > *,
-
-.catalog-wrapper > *
-{
-  outline: 1px solid red;
-}
-
-.index-wrapper > * > *,
-.catalog-wrapper > * > *  {
-  outline: 1px solid gold;
-} */
-
 
 .visually-hidden {
   position: absolute;
@@ -148,7 +138,7 @@ img {
 }
 
 .index-wrapper,
-.catalog-wrapper {
+.catalog-page-wrapper {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   height: 100%;
@@ -210,9 +200,29 @@ img {
   border-bottom: 1px solid rgba(var(--white), var(--opacity));
 }
 
-.user-menu > * {
+.user-menu .link {
   background-color: rgba(var(--white), var(--opacity));
   border-radius: 20px;
+}
+
+.user-menu .link:hover,
+.user-menu .link:focus,
+.filter-btn:hover,
+.filter-btn:focus,
+.navigation-list-item .link:hover,
+.navigation-list-item .link:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  border-radius: 26px;
+}
+
+.search-link:hover path,
+.search-link:focus path,
+.enter-link:hover path,
+.enter-link:focus path,
+.cart-link:hover path,
+.cart-link:focus path {
+  fill: var(--basic-black);
 }
 
 .catalog-list-nav .link {
@@ -319,13 +329,8 @@ img {
 .populars .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-right: -26px;
-}
+  justify-content: space-between;
 
-.populars .catalog-list-item {
-  flex-basis: 267px;
-  margin-right: 26px;
 }
 
 .catalog-list-item .link{
@@ -451,6 +456,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid rgba(var(--white), var(--opacity));
 }
 
 .main-footer .link,
@@ -513,6 +519,14 @@ img {
   line-height: 16px;
 }
 
+.breadcrumbs {
+  margin-top: -38px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+}
+
 .breadcrumbs-list-item {
   font-weight: normal;
 }
@@ -523,8 +537,18 @@ img {
   line-height: 41px;
 }
 
+.filters-form {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
 .filters fieldset {
   border: none;
+  margin: 14px 15px 0 0;
+  padding-top: 11px;
+  padding-bottom: 0;
 }
 
 .filters select,
@@ -532,18 +556,98 @@ img {
 .fillings,
 .range-controls,
 .filter-btn {
+  height: 36px;
   font-size: 16px;
   line-height: 18px;
   color: inherit;
   background-color: rgba(var(--white), var(--opacity));
   border: none;
   border-radius: 20px;
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
 
 .filter-btn {
   border: 2px solid var(--basic-white);
 }
 
+.range-controls {
+  position: relative;
+  width: 218px;
+  padding: 18px 21px;
+}
+
+.scale {
+  width: 176px;
+  height: 2px;
+  background-color: var(--basic-range);
+}
+
+.bar {
+  width: 106px;
+  height: 2px;
+  background-color: var(--basic-pink);
+  margin-left: 24px;
+}
+
+.toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--basic-toggles);
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+  top: 9px;
+  left: 34px;
+}
+
+.toggle-max {
+  left: 132px;
+}
+
+.toggle:hover {
+  transform: scale(1.1);
+  cursor:
+}
+
+.catalog .catalog-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 26px;
+}
+
+.catalog-list-item {
+  position: relative;
+  width: 267px;
+}
+
+.catalog-item-btn {
+  display: none;
+}
+
+.catalog-list-item:hover .catalog-item-btn,
+.catalog-wrapper:focus-within .catalog-item-btn {
+  display: inline-block;
+}
+
+.catalog-list-item:hover .catalog-wrapper,
+.catalog-wrapper:focus-within  {
+  height: auto;
+  position: absolute;
+  width: 293px;
+  top: -6px;
+  left: -13px;
+  background-color: rgba(var(--white), var(--opacity));
+  box-shadow: 0px 20px 20px rgba(var(--black), var(--opacity));
+  border-radius: 4px;
+  padding: 6px 13px 21px 13px;
+  z-index: 1;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .pagination-list-item {
   display: inline-block;
