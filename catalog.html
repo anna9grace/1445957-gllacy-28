@@ -11,9 +11,9 @@
       <header class="main-header container">
         <nav class="main-navigation">
           <a class="main-header-logo" href="index.html" aria-label="На главную"><img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop"></a>
-          <ul class="navigation-list">
+          <ul class="main-navigation-list">
             <li class="navigation-list-item">
-              <a class="link" href="#">Каталог</a>
+              <a class="link active" href="#">Каталог</a>
               <ul class="catalog-list-nav popup">
                 <li><a class="link new" href="#">Новинки</a></li>
                 <li><a class="link">Сливочное</a></li>
@@ -33,25 +33,28 @@
         <div class="user-menu">
 
           <!-- форма поиска -->
-          <a class="link search-link" href="#">
-            <span class="visually-hidden">Поиск</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z" fill="var(--basic-white)"/>
-            </svg>
-          </a>
+          <div class="user-menu-wrapper search-wrapper">
+            <a class="user-link search-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z" fill="var(--basic-white)"/>
+              </svg>
+            </a>
             <form class="search-form popup" action="#" method="GET">
               <label for="search-field" class="visually-hidden">Поле поиска</label>
               <input type="search" name="search" id="search-field" placeholder="Крем-брюле">
             </form>
+          </div>
 
           <!-- форма входа -->
-          <a class="link enter-link" href="#">
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z" fill="var(--basic-white)"/>
-              <path d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z" fill="var(--basic-white)"/>
-            </svg>
-            Вход
-          </a>
+          <div class="user-menu-wrapper enter-wrapper">
+            <a class="user-link enter-link" href="#">
+              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z" fill="var(--basic-white)"/>
+                <path d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z" fill="var(--basic-white)"/>
+              </svg>
+              Вход
+            </a>
             <form class="enter-form popup" action="#" method="POST">
               <label for="email-field" class="visually-hidden">Введите почту</label>
               <input type="email" name="email" id="email-field" placeholder="email@example.com">
@@ -63,34 +66,37 @@
                   <a class="link" href="#">Новая регистрация</a>
                 </p>
             </form>
+          </div>
 
           <!-- корзина -->
-          <a class="link cart-link" href="#">
-            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" fill="var(--basic-white)"/>
-              <path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" fill="var(--basic-white)"/>
-              <path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z" fill="var(--basic-white)"/>
-            </svg>
-            <span class="visually-hidden">Корзина </span>
-            <span>Пусто</span>
-          </a>
-          <div class="shopping-cart popup">
-            <table>
-              <tr>
-                <td><button><span class="visually-hidden">Удалить</span></button></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х <span class="shopping-cart-price">200 руб.</span></td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td><button><span class="visually-hidden">Удалить</span></button></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг х <span class="shopping-cart-price">300 руб.</span></td>
-                <td>450 руб.</td>
-              </tr>
-            </table>
-            <p class="total-price">Итого:<span>750 руб.</span></p>
-            <button class="btn" type="submit">Оформить заказ</button>
+          <div class="user-menu-wrapper cart-wrapper">
+            <a class="user-link cart-link" href="#">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" fill="var(--basic-white)"/>
+                <path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" fill="var(--basic-white)"/>
+                <path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z" fill="var(--basic-white)"/>
+              </svg>
+              <span class="visually-hidden">Корзина </span>
+              <span>Пусто</span>
+            </a>
+            <div class="shopping-cart popup">
+              <table>
+                <tr>
+                  <td><button><span class="visually-hidden">Удалить</span></button></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг х <span class="shopping-cart-price">200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><button><span class="visually-hidden">Удалить</span></button></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг х <span class="shopping-cart-price">300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr>
+              </table>
+              <p class="total-price">Итого:<span>750 руб.</span></p>
+              <button class="btn" type="submit">Оформить заказ</button>
+            </div>
           </div>
 
         </div>
@@ -112,12 +118,14 @@
           <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset>
               <legend>Сортировка</legend>
-                <select name="sort-by">
-                  <option value="by-popularity" selected>по популярности</option>
-                  <option value="cheap-first">сначала недорогие</option>
-                  <option value="expensive-first">сначала дорогие</option>
-                  <option value="by-fats">по жирности</option>
-                </select>
+                <div class="select-wrapper" tabindex="-1">
+                  <select name="sort-by">
+                    <option value="by-popularity" selected>по популярности</option>
+                    <option value="cheap-first">сначала недорогие</option>
+                    <option value="expensive-first">сначала дорогие</option>
+                    <option value="by-fats">по жирности</option>
+                  </select>
+                </div>
             </fieldset>
             <fieldset>
               <legend>Цена: <span>100 ₽ – 500 ₽</span></legend>
@@ -132,28 +140,28 @@
             <fieldset>
               <legend>Жирность:</legend>
                 <div class="fat-percentage">
-                  <input type="radio" name="Fat-percentage" id="Fats-0%" value="Fats-0%">
+                  <input class="visually-hidden" type="radio" name="Fat-percentage" id="Fats-0%" value="Fats-0%">
                   <label for="Fats-0%">0%</label>
-                  <input type="radio" name="Fat-percentage" id="Fats-less-10%" value="Fats-less-10%"checked>
+                  <input class="visually-hidden" type="radio" name="Fat-percentage" id="Fats-less-10%" value="Fats-less-10%"checked>
                   <label for="Fats-less-10%">до 10%</label>
-                  <input type="radio" name="Fat-percentage" id="Fats-less-30%" value="Fats-less-30%">
+                  <input class="visually-hidden" type="radio" name="Fat-percentage" id="Fats-less-30%" value="Fats-less-30%">
                   <label for="Fats-less-30%">до 30%</label>
-                  <input type="radio" name="Fat-percentage" id="Fats-more-30%" value="Fats-more-30%">
+                  <input class="visually-hidden" type="radio" name="Fat-percentage" id="Fats-more-30%" value="Fats-more-30%">
                   <label for="Fats-more-30%">выше 30%</label>
                 </div>
             </fieldset>
             <fieldset>
               <legend>Наполнители:</legend>
                 <div class="fillings">
-                  <input type="checkbox" name="Choco-fill" id="Choco-fill" checked>
+                  <input class="visually-hidden" type="checkbox" name="Choco-fill" id="Choco-fill" checked>
                   <label for="Choco-fill">шоколадные</label>
-                  <input type="checkbox" name="Sugar-fill" id="Sugar-fill" checked>
+                  <input class="visually-hidden" type="checkbox" name="Sugar-fill" id="Sugar-fill" checked>
                   <label for="Sugar-fill">сахарные присыпки</label>
-                  <input type="checkbox" name="Fruits-fill" id="Fruits-fill">
+                  <input class="visually-hidden" type="checkbox" name="Fruits-fill" id="Fruits-fill">
                   <label for="Fruits-fill">фрукты</label>
-                  <input type="checkbox" name="Syrop-fill" id="Syrop-fill">
+                  <input class="visually-hidden" type="checkbox" name="Syrop-fill" id="Syrop-fill">
                   <label for="Syrop-fill">сиропы</label>
-                  <input type="checkbox" name="Jam-fill" id="Jam-fill">
+                  <input class="visually-hidden" type="checkbox" name="Jam-fill" id="Jam-fill">
                   <label for="Jam-fill">джемы</label>
                 </div>
             </fieldset>
@@ -261,18 +269,20 @@
             </li>
           </ul>
           <ul class="pagination-list">
-            <li class="pagination-list-item current"><a class="link">1</a></li>
-            <li class="pagination-list-item"><a class="link" href="#">2</a></li>
-            <li class="pagination-list-item"><a class="link" href="#">3</a></li>
-            <li class="pagination-list-item"><a class="link" href="#">4</a></li>
-            <li class="pagination-list-item"><a class="link" href="#">5</a></li>
+            <li class="prev-page"><a class="pagination-link disabled" aria-label="Предыдущая страница"></a></li>
+            <li class="pagination-list-item current"><a class="pagination-link">1</a></li>
+            <li class="pagination-list-item"><a class="pagination-link" href="#">2</a></li>
+            <li class="pagination-list-item"><a class="pagination-link" href="#">3</a></li>
+            <li class="pagination-list-item"><a class="pagination-link" href="#">4</a></li>
+            <li class="pagination-list-item"><a class="pagination-link" href="#">5</a></li>
+            <li class="next-page"><a class="pagination-link" href="#" aria-label="Следующая страница"></a></li>
           </ul>
         </section>
       </main>
       <footer class="main-footer container">
         <ul class="socials-list">
           <li class="socials-list-item">
-            <a class="link" href="#">
+            <a class="social-link" href="#">
               <span class="visually-hidden">Facebook</span>
               <svg class="social-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z" stroke="none" stroke-width="2"/>
@@ -281,7 +291,7 @@
             </a>
           </li>
           <li class="socials-list-item">
-            <a class="link" href="#">
+            <a class="social-link" href="#">
               <span class="visually-hidden">ВКонтакте</span>
               <svg class="social-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z" stroke="none" stroke-width="2"/>
@@ -292,7 +302,7 @@
             </a>
           </li>
           <li class="socials-list-item">
-            <a class="link" href="#">
+            <a class="social-link" href="#">
               <span class="visually-hidden">Instagram</span>
               <svg class="social-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z" stroke="none" stroke-width="2"/>
@@ -304,7 +314,7 @@
             </a>
           </li>
           <li class="socials-list-item">
-            <a class="link" href="#">
+            <a class="social-link" href="#">
               <span class="visually-hidden">Twitter</span>
               <svg class="social-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z" stroke="none"/>
