@@ -117,7 +117,8 @@
             <fieldset>
               <legend>Сортировка</legend>
                 <div class="select-wrapper" tabindex="-1">
-                  <select name="sort-by">
+                  <label class="visually-hidden" for="sort-by-select">Сортировать по параметру</label>
+                  <select name="sort-by" id="sort-by-select">
                     <option value="by-popularity" selected>по популярности</option>
                     <option value="cheap-first">сначала недорогие</option>
                     <option value="expensive-first">сначала дорогие</option>
