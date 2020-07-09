@@ -1,4 +1,3 @@
-
 var modalOpen = document.querySelector(".modal-open-btn");
 var modalFeedback = document.querySelector(".feedback.modal");
 var modalWrapper = document.querySelector(".modal-wrapper");
@@ -7,7 +6,6 @@ var feedbackForm = modalFeedback.querySelector(".feedback-form");
 var nameField = modalFeedback.querySelector("[id=questions-name]");
 var emailField = modalFeedback.querySelector("[id=questions-email]");
 var questionField = modalFeedback.querySelector("[id=questions-text]");
-
 var slideButtons = document.querySelectorAll(".slider-controls-btn");
 var slides = document.querySelectorAll(".slide");
 var pageColor = document.querySelector(".page-wrapper");
@@ -16,7 +14,6 @@ var isStorageSupport = true;
 var storageName = "";
 var storageEmail = "";
 
-
 try {
   storageName = localStorage.getItem("name");
   storageEmail = localStorage.getItem("email");
@@ -24,11 +21,11 @@ try {
   isStorageSupport = false;
 }
 
-
 modalOpen.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalFeedback.classList.add("modal-show");
   modalWrapper.classList.add("background-show");
+  modalFeedback.classList.remove("form-error");
   nameField.focus();
 
   if (storageName) {
@@ -42,13 +39,11 @@ modalOpen.addEventListener("click", function(evt) {
   }
 });
 
-
 modalClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalFeedback.classList.remove("modal-show");
   modalWrapper.classList.remove("background-show");
 });
-
 
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
@@ -59,7 +54,6 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 })
-
 
 feedbackForm.addEventListener("submit", function(evt) {
   if(!nameField.value || !emailField.value || !questionField.value) {
@@ -73,9 +67,7 @@ feedbackForm.addEventListener("submit", function(evt) {
   }
 })
 
-
 slideButtons[0].classList.add("current-btn");
-
 
 for (let i = 0; i < slideButtons.length; i++) {
   slideButtons[i].onclick = function(evt) {
@@ -97,4 +89,3 @@ for (let i = 0; i < slideButtons.length; i++) {
     pageColor.classList.add("icecream-bg-"+ i);
   }
 }
-
